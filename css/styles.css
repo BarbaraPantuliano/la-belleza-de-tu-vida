@@ -46,6 +46,9 @@ body{
 .inputfooter{
     font-size: 0.8rem;
 }
+.containercarrousel{
+    max-width: 600px;
+}
 .balloon{
     position: relative;
     border: 1px solid #ccc;
@@ -126,6 +129,9 @@ body{
     background-image: radial-gradient(circle at 24% 5%, hsla(22, 84%, 76%, 1) 6%, transparent 83%), radial-gradient(circle at 98% 5%, hsla(319, 100%, 77%, 1) 20%, transparent 54%), radial-gradient(circle at 40% 72%, hsla(100, 47%, 99%, 1) 16%, transparent 62%), radial-gradient(circle at 57% 61%, hsla(26, 0%, 81%, 1) 19%, transparent 51%), radial-gradient(circle at 61% 88%, hsla(121, 100%, 61%, 1) 14%, transparent 81%);
     background-blend-mode: normal, normal, normal, normal, lighten;
 }
+.card-custom{
+    max-width: 300px;
+}
 .card-img-top{
     width:200px;
     height: 200px;
@@ -168,5 +174,9 @@ body{
     .text-overlay{
         font-size: 18px;
         padding: 5px;
+    }
+    .imagenlogo{
+        width: 50%;
+        height: 50%;
     }
 }
