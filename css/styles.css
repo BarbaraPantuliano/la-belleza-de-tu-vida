@@ -1,0 +1,137 @@
+.shopping-cart-icon{
+    width: 24px;
+    height: 24px;
+}
+.menunavegacion{
+    background-color: rgb(240, 120, 140);
+}
+.imagenlogo{
+    width: 25%;
+    height: 25%;
+}
+.carousel{
+    max-width: 900px;
+}
+.botonnewsletter{
+    background-color:rgb(240, 120, 140) ; 
+    font-size: 0.8rem;
+}
+.botonnewsletter:hover{
+    background-color:rgb(240, 120, 140) ; 
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    background-color: rgba(230, 136, 149, 0.874);
+}
+footer{
+    background-color: rgba(230, 136, 149, 0.874);
+}
+body{
+    background-color: hsla(185, 0%, 100%, 1);
+    background-image: radial-gradient(circle at 91% 11%, hsla(66, 100%, 88%, 0.66) 4.038772213247173%, transparent 37.2265767974114%), radial-gradient(circle at 66% 37%, hsla(16, 100%, 88%, 1) 0%, transparent 63.33640956108327%), radial-gradient(circle at 36% 87%, hsla(321, 100%, 88%, 1) 12.107536057085522%, transparent 63.33640956108327%);
+    background-blend-mode: normal, normal, normal;
+}
+.formulariofooter{
+    height: 25px;
+    min-width:150px
+}
+.redes{
+    font-size: 0.8rem;
+}
+.Newsletter{
+    font-size: 0.8rem;
+}
+.inputfooter{
+    font-size: 0.8rem;
+}
+.balloon{
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 30px 0;
+    width: fit-content;
+    max-width: 80%;
+}
+.balloon::after{
+    position: absolute;
+    bottom: -10px;
+    left: 20px;
+    border-width: 10px;
+    border-style: solid;
+}
+.balloon-1{
+    font-size: 1rem;
+    background-color: hsla(340, 100%, 54%, 1);
+    background-image: radial-gradient(circle at 24% 5%, hsla(22, 84%, 76%, 1) 6%, transparent 83%), radial-gradient(circle at 98% 5%, hsla(319, 100%, 77%, 1) 20%, transparent 54%), radial-gradient(circle at 40% 72%, hsla(100, 47%, 99%, 1) 16%, transparent 62%), radial-gradient(circle at 57% 61%, hsla(26, 0%, 81%, 1) 19%, transparent 51%), radial-gradient(circle at 61% 88%, hsla(121, 100%, 61%, 1) 14%, transparent 81%);
+    background-blend-mode: normal, normal, normal, normal, lighten;
+}
+.balloon-2{
+    font: 1rem;
+    background-color: hsla(340, 100%, 54%, 1);
+    background-image: radial-gradient(circle at 24% 5%, hsla(22, 84%, 76%, 1) 6%, transparent 83%), radial-gradient(circle at 98% 5%, hsla(319, 100%, 77%, 1) 20%, transparent 54%), radial-gradient(circle at 40% 72%, hsla(100, 47%, 99%, 1) 16%, transparent 62%), radial-gradient(circle at 57% 61%, hsla(26, 0%, 81%, 1) 19%, transparent 51%), radial-gradient(circle at 61% 88%, hsla(121, 100%, 61%, 1) 14%, transparent 81%);
+    background-blend-mode: normal, normal, normal, normal, lighten;
+}
+.balloon-3{
+    font-size: 1rem;
+    background-color: hsla(340, 100%, 54%, 1);
+    background-image: radial-gradient(circle at 24% 5%, hsla(22, 84%, 76%, 1) 6%, transparent 83%), radial-gradient(circle at 98% 5%, hsla(319, 100%, 77%, 1) 20%, transparent 54%), radial-gradient(circle at 40% 72%, hsla(100, 47%, 99%, 1) 16%, transparent 62%), radial-gradient(circle at 57% 61%, hsla(26, 0%, 81%, 1) 19%, transparent 51%), radial-gradient(circle at 61% 88%, hsla(121, 100%, 61%, 1) 14%, transparent 81%);
+    background-blend-mode: normal, normal, normal, normal, lighten;
+}
+.align-left{
+    align-self: flex-start;
+}
+.align-right{
+    align-self: flex-end;
+    text-align: right;
+}
+.align-center{
+    align-self: center;
+    text-align: center;
+}
+.imagentratamiento{
+    width: 200px;
+    height: 200px;
+}
+.shopping-cart-treatment-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    color: white;
+    border-radius: 50%;
+}
+.shopping-cart-treatment-icon{
+    width: 24px;
+    height: 24px;
+}    
+.favorites-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    color: white;
+    border-radius: 50%;
+}
+.favorites-icon{
+    width: 24px;
+    height: 24px;
+}
+.card{
+    width: fit-content;
+    transform: scale(0.8);
+    background-color: hsla(340, 100%, 54%, 1);
+    background-image: radial-gradient(circle at 24% 5%, hsla(22, 84%, 76%, 1) 6%, transparent 83%), radial-gradient(circle at 98% 5%, hsla(319, 100%, 77%, 1) 20%, transparent 54%), radial-gradient(circle at 40% 72%, hsla(100, 47%, 99%, 1) 16%, transparent 62%), radial-gradient(circle at 57% 61%, hsla(26, 0%, 81%, 1) 19%, transparent 51%), radial-gradient(circle at 61% 88%, hsla(121, 100%, 61%, 1) 14%, transparent 81%);
+    background-blend-mode: normal, normal, normal, normal, lighten;
+}
+.card-img-top{
+    width:200px;
+    height: 200px;
+}
+.list-group-item{
+    background-color: hsla(340, 100%, 54%, 1);
+    background-image: radial-gradient(circle at 24% 5%, hsla(22, 84%, 76%, 1) 6%, transparent 83%), radial-gradient(circle at 98% 5%, hsla(319, 100%, 77%, 1) 20%, transparent 54%), radial-gradient(circle at 40% 72%, hsla(100, 47%, 99%, 1) 16%, transparent 62%), radial-gradient(circle at 57% 61%, hsla(26, 0%, 81%, 1) 19%, transparent 51%), radial-gradient(circle at 61% 88%, hsla(121, 100%, 61%, 1) 14%, transparent 81%);
+    background-blend-mode: normal, normal, normal, normal, lighten;
+}

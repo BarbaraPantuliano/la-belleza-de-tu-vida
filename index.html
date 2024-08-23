@@ -9,37 +9,55 @@
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg menunavegacion d-flex">
-        <div class="container-fluid">
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./pages/sobremi.html">Sobre Mi</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./pages/tratamientos.html">Tratamientos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./pages/productos.html">Productos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./pages/testimonios.html">Testimonios</a>
-              </li>
-              <li><img src="./assets/carrito-de-compras.png" alt="Carrito de Compras" class="shopping-cart-icon"></li>
-            </ul>
-          </div>
-        </div>
-    </nav>
+    <header>
+        <nav class="navbar navbar-expand-lg menunavegacion">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto d-flex justify-content-evenly w-100">
+                    <li class="nav-item">
+                        <a class="nav-link active text-uppercase" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="./pages/sobremi.html">Sobre Mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="./pages/tratamientos.html">Tratamientos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="./pages/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="./pages/testimonios.html">Testimonios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="./pages/contacto.html">Contacto</a>
+                    </li>
+                    <li><img src="./assets/carrito-de-compras.png" alt="Carrito de Compras" class="shopping-cart-icon"></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
         <main>
-            <section class="container">
-                <div class="raw">
-                    <img src="./assets/logo.png" alt="logo del sitio donde se ven dos manos que rodean una flor y el nombre del sitio La Belleza de tu vida" class="logo col">
+            <section class="container imagenlogo">
+                <div class="row align-items-center">
+                    <img src="./assets/logo.png" alt="logo del sitio donde se ven dos manos que rodean una flor y el nombre del sitio La Belleza de tu vida" class="logo col rounded mx-auto d-block">
                 </div>
             </section>
-            <section id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <section class="container mt-4">
+                <article class="row">
+                    <p class="col-12 col-lg">El cuidado de la piel del rostro es esencial para mantener una apariencia saludable y radiante. Un régimen de limpieza adecuado elimina las impurezas y el exceso de grasa que pueden obstruir los poros, previniento brotes y dejando la piel fresca.</p>
+                    <p class="col-12 col-lg">La hidratación es otro aspecto fundamental para una piel equilibrada. Aplicar una crema hidratante adecuada ayuda a mantener la barrera cutánea y a retener la humedad, lo que puede prevenir la sequedad y la descamación.</p>
+                    <p class="col-12 col-lg">La protección solar es imprescindible para prevenir el daño causado por los rayos UV, que pueden acelerar el envejecimiento y causar manchas. Incorporar un protector solar de amplio espectro en tu rutina diaria protege la piel de los efectos nocivos del sol</p>
+                    <p class="col-12 col-lg">Finalmente, no olvides la importancia de los tratamientos específicos como exfoliantes y mascarillas. Estos productos ayudan a eliminar las células muertas y a mejorar la renovación celular, revelando una piel más suave y luminosa</p>
+                </article>
+                <article class="row text-center mt-3">
+                    <h1 class="col text-danger h4">Escoge tratamientos y productos que se adapten a las necesidades de tu piel para obtener los mejores resultados!</h1>
+                </article>
+              </section>
+            <section id="carouselExampleAutoplaying" class="carousel slide mx-auto" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img src="./assets/fotoinicio1.jpg" class="d-block w-100" alt="imagen de una mujer acostada con los ojos cerrados y una vincha en el pelo, con un producto blanco aplicado sobre el rostro, junto a ella la mano de una mujer sosteniendo el producto y un pincel">
@@ -65,8 +83,26 @@
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
-              </section>
+              </section>            
         </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>   
 </body>
+<footer>
+    <div class="container-fluid mt-2">
+        <article class="row align-items-start">
+            <div class="col">
+                <p class="redes mb-0 text-white">Nuestras redes sociales</p>
+                <a href="https://www.instagram.com/labellezadetuvida/" target="_blank" class="redes text-white">Instagram</a>
+                <a href="https://www.facebook.com/profile.php?id=100063574358959" target="_blank" class="redes text-white" >Facebook</a>     
+            </div> 
+            <div class="col">
+                <p class="Newsletter col mb-0 text-white">Suscribirse al Newsletter</p>
+                <form class="d-flex w-50 formulariofooter" role="enviar">
+                    <input class="form-control inputfooter" type="email" placeholder="Ingresar email" aria-label="Ingresar email">
+                    <button class="btn botonnewsletter text-dark" type="submit">Enviar</button>
+                  </form>
+            </div>
+        </article>
+    </div>
+</footer>
 </html>
