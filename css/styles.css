@@ -180,3 +180,9 @@ body{
         height: 50%;
     }
 }
+.cardtestimonios{
+    max-width: 540px;
+}
+.imagentestimonio{
+    width: 90%;
+}
