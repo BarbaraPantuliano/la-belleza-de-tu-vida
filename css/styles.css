@@ -176,7 +176,31 @@ body{
 .cardClaudia{
     margin-left: 50%;
 }
-@media (max-width: 768px){
+.imagenformulariocontacto{
+    width: 400px;
+    height: 300px;
+}
+.btn{
+    background-color:rgb(240, 120, 140) ; 
+}
+.btn:hover{
+    background-color:rgb(240, 120, 140) ; 
+}
+.whatsapp-button{
+    display:inline-block;
+    position: fixed;
+    bottom: 70px;
+    right: 40px;
+}
+.whatsapp-icon{
+    width: 35px;
+    height:35px;
+    margin-right: 5px;
+}
+.whatsapp-link:hover{
+    background-color: transparent;
+}
+@media (max-width: 767px){
     .inicioproductos img{
         height: auto;
     }
@@ -190,5 +214,15 @@ body{
     }
     .cardClaudia{
         margin-left: 20%;
+    }   
+    .whatsapp-button{
+        right: 1px;
+        bottom: 50px;
+    }
+}
+@media (max-width: 320px){
+    .whatsapp-button{
+        right: 1px;
+        bottom: 70px;
     }
 }
