@@ -9,6 +9,9 @@
 h1{
     font-family: "raleway", italic;
 }
+.h1sobremi{
+    color: rgb(240, 120, 140);
+}
 .h2nuevafuente{
     font-family: "playfairdisplay" ;
 }
@@ -155,6 +158,9 @@ body{
 .card-img-top{
     width:200px;
     height: 200px;
+}
+.textocards{
+    font-size: 1.2rem;
 }
 .list-group-item{
     background-color: hsla(340, 100%, 54%, 1);
