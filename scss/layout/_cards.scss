@@ -1,0 +1,48 @@
+.cards{
+    width: fit-content;
+    max-width: 300px;
+    transform: scale(0.8);
+    background-color: hsla(340, 100%, 54%, 1);
+    background-image: radial-gradient(circle at 24% 5%, hsla(22, 84%, 76%, 1) 6%, transparent 83%), radial-gradient(circle at 98% 5%, hsla(319, 100%, 77%, 1) 20%, transparent 54%), radial-gradient(circle at 40% 72%, hsla(100, 47%, 99%, 1) 16%, transparent 62%), radial-gradient(circle at 57% 61%, hsla(26, 0%, 81%, 1) 19%, transparent 51%), radial-gradient(circle at 61% 88%, hsla(121, 100%, 61%, 1) 14%, transparent 81%);
+    background-blend-mode: normal, normal, normal, normal, lighten;
+    .imagencards{
+        width:200px;
+        height: 200px;
+    }
+    .precio{
+        background-color: hsla(340, 100%, 54%, 1);
+        background-image: radial-gradient(circle at 24% 5%, hsla(22, 84%, 76%, 1) 6%, transparent 83%), radial-gradient(circle at 98% 5%, hsla(319, 100%, 77%, 1) 20%, transparent 54%), radial-gradient(circle at 40% 72%, hsla(100, 47%, 99%, 1) 16%, transparent 62%), radial-gradient(circle at 57% 61%, hsla(26, 0%, 81%, 1) 19%, transparent 51%), radial-gradient(circle at 61% 88%, hsla(121, 100%, 61%, 1) 14%, transparent 81%);
+        background-blend-mode: normal, normal, normal, normal, lighten;
+    }
+}
+.shopping-cart-treatment-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    color: white;
+    border-radius: 50%;
+}
+.shopping-cart-treatment-icon{
+    width: 24px;
+    height: 24px;
+}    
+.favorites-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    color: white;
+    border-radius: 50%;
+}
+.favorites-icon{
+    width: 24px;
+    height: 24px;
+}
+
+.cardtestimonios{
+    max-width: 540px;
+    .imagentestimonio{
+        width: 90%;
+    }
+}

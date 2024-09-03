@@ -1,0 +1,38 @@
+@media (max-width: 767px){
+    .inicioproductos img{
+        height: auto;
+    }
+    .textosobreimagenproducto{
+        font-size: 18px;
+        padding: 5px;
+    }
+    .imagenlogo{
+        width: 50%;
+        height: 50%;
+    }
+    .cardClaudia{
+        margin-left: 20%;
+    }   
+    .whatsapp-button{
+        right: 1px;
+        bottom: 50px;
+    }
+    p{
+        font-size: 2rem;
+    }
+    .columnacontacto{
+        margin-left: 0%;
+    }
+}
+@media (max-width:425px){
+    iframe{
+        width:300px;
+        height: 150px;
+    }
+}
+@media (max-width: 320px){
+    .whatsapp-button{
+        right: 1px;
+        bottom: 70px;
+    }
+}

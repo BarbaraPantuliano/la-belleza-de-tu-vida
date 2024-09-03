@@ -1,0 +1,35 @@
+.imagenformulariocontacto{
+    width: 400px;
+    height: 300px;
+}
+
+.botonformcontacto{
+    background-color: $colorprimario ; 
+    &:hover{
+        background-color: $colorprimario;
+    }
+}
+
+.columnacontacto{
+    margin-left: 40px;
+}
+
+.whatsapp-button{
+    display:inline-block;
+    position: fixed;
+    bottom: 70px;
+    right: 40px;
+    .whatsapp-icon{
+        width: 35px;
+        height:35px;
+        margin-right: 5px;
+    }
+    .whatsapp-link:hover{
+        background-color: transparent;
+    }
+}
+
+iframe{
+    margin-top: 10px;
+    align-items: center;
+}
