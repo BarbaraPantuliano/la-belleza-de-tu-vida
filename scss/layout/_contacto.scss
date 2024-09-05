@@ -3,10 +3,16 @@
     height: 300px;
 }
 
-.botonformcontacto{
-    background-color: $colorprimario ; 
-    &:hover{
-        background-color: $colorprimario;
+.contenedorcontacto{
+    .botonformcontacto{
+        background-color: $colorprimario; 
+        font-family: $fuente;
+        &:hover{
+            background-color: $colorprimario;
+        }
+    }
+    .itemsformulario{
+        font-family: $fuente;
     }
 }
 

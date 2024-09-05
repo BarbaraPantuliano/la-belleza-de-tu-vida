@@ -13,3 +13,35 @@
 $fuente: "raleway";
 $fuentesecundaria: "playfairdisplay";
 $colorprimario: rgb(240, 120, 140);
+$colorsecundario: rgba(230, 136, 149, 0.874);
+
+%configlinks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    color: white;
+    border-radius: 50%;
+}
+
+%iconos{
+    width: 24px;
+    height: 24px;
+}
+
+%configcards{
+    background-color: hsla(340, 100%, 54%, 1);
+    background-image: radial-gradient(circle, rgb(242, 136, 154), rgb(241, 212, 217))
+}
+
+@keyframes efectologo{
+    0%{ transform: rotate(-40deg);}
+    20%{transform: rotate(-20deg);}
+    40%{ transform: rotate(20deg)}
+    60%{ transform: rotate(40deg)}
+    80%{ transform: rotate(20deg)}
+    100%{transform: rotate(-20deg);}
+}
+    
+
+

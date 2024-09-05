@@ -1,10 +1,19 @@
+//Acá están las fuentes, las variables, los extend y el keyframe//
 @import "utilities/base";
+
+//Acá están los estilos que se repiten en prácticamente todas las páginas//
 @import "layout/general";
+
+//Acá están los estilos propios de cada página de html. Sobre Mi no requirió ninguno//
 @import "layout/inicio";
-@import "layout/sobremi";
 @import "layout/tratamientos";
 @import "layout/productos";
 @import "layout/testimonios";
 @import "layout/contacto";
+
+//Acá están los estilos propios de las cards, como el fondo, y los iconos agregados//
 @import "layout/cards";
+
+//Acá están estilados todos los medaqueries aplicados//
 @import "layout/mediaqueries";
+
