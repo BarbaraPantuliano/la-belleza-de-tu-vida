@@ -1,16 +1,20 @@
 .imagenlogo{
     width: 25%;
     height: 25%;
+    .logo{
+        animation-name: efectologo;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-duration: 3s;
+        animation-delay: 0s;
+    }
 }
 
 .containercarrousel{
     max-width: 600px;
 }
 
-.logo{
-    animation-name: efectologo;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    animation-duration: 3s;
-    animation-delay: 0s;
+.h1fuentemia{
+    font-family: $fuentesecundaria;
+    color: black;
 }

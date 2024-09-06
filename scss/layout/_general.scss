@@ -10,9 +10,6 @@ body{
     h2{
         font-family: $fuentesecundaria;
     }
-    h3{
-        font-family: $fuente;
-    }
     p{
         font-family: $fuente;
         font-size: 1rem;
@@ -25,7 +22,7 @@ body{
         text-decoration: none;
         font-family: $fuente;
         &:hover{
-            background-color:$colorsecundario;
+            background-color:$coloracento;
         }
     }
     .shopping-cart-icon{
