@@ -250,6 +250,12 @@ iframe {
   .columnacontacto {
     margin-left: 0%;
   }
+  .cards {
+    transform: scale(1);
+    width: 80%;
+    max-width: none;
+    margin: 16px;
+  }
 }
 @media (max-width: 425px) {
   iframe {
