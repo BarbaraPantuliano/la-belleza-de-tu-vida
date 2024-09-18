@@ -5,6 +5,7 @@
     @extend%configcards;
     .precio{
         @extend%configcards;
+        height: 30px;
     }
     .shopping-cart-treatment-link{
         @extend%configlinks;

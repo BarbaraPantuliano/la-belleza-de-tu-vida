@@ -2,6 +2,12 @@
     margin-left: 50%;
 }
 
+.textoiniciotest{
+    font-family: $fuentesecundaria;
+    font-size: 1.50rem;
+    color: $colorsecundario;
+}
+
 /*Hice esto por excepción, porque sino el efecto me cambiaba el tamaño de las letras*/
 [data-aos="fade-up"]{
     transform: none;

@@ -3,10 +3,20 @@
     height: 300px;
 }
 
+.textoayudarte{
+    font-family: $fuente;
+    color: $colorprimario;
+    font-size: 2rem;
+}
+
 .contenedorcontacto{
+    background-color: rgb(231, 181, 181);
+    margin-top:100px;
+    margin-bottom: 50px;
     .botonformcontacto{
         background-color: $colorprimario; 
         font-family: $fuente;
+        margin-bottom: 20px;
         &:hover{
             background-color: $colorprimario;
         }
@@ -23,11 +33,11 @@
 .whatsapp-button{
     display:inline-block;
     position: fixed;
-    bottom: 70px;
-    right: 40px;
+    bottom: 120px;
+    right: 60px;
     .whatsapp-icon{
-        width: 35px;
-        height:35px;
+        width: 50px;
+        height:50px;
         margin-right: 5px;
     }
     .whatsapp-link:hover{

@@ -4,8 +4,9 @@
 //Acá están los estilos que se repiten en prácticamente todas las páginas//
 @import "layout/general";
 
-//Acá están los estilos propios de cada página de html. Sobre Mi no requirió ninguno//
+//Acá están los estilos propios de cada página de html.//
 @import "layout/inicio";
+@import "layout/sobremi";
 @import "layout/tratamientos";
 @import "layout/productos";
 @import "layout/testimonios";
