@@ -10,7 +10,7 @@
 }
 @font-face {
   font-family: "raleway";
-  src: url(../assets/raleway/raleway-variablefont_wght.ttf);
+  src: url(../assets/Raleway/Raleway-VariableFont_wght.ttf);
 }
 .cards .favorites-link, .cards .shopping-cart-treatment-link {
   display: flex;
