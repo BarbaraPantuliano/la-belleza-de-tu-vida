@@ -130,20 +130,19 @@ if(iniciarSesion()){
 
                 let descuento = totalCarrito * 0.20;
                 
-
                 alert("Cupón aplicado. Ha obtenido un 20% de descuento.\nTotal después del descuento: $" + (totalCarrito -= descuento));
             
             } else {
-
+                //Si el código de cupón ingresado no es correcto
                 alert("Cupón inválido.");
                 
             }
-
+            //función que trae la forma de abonar
             abonar(totalCarrito);
             
 
         }else{
-
+            //En caso que no quiera agregar cupón
             alert("Compra finalizada.\nLista de productos:\n" + lista_compra + "Total del carrito: $" + totalCarrito);
 
             abonar(totalCarrito);
@@ -155,15 +154,16 @@ if(iniciarSesion()){
 
     } else {
 
-
+        //En caso de que haya puesto cancelar
         alert("No se inició la compra.");
 
+        //Le preguntamos de nuevo por si puso cancelar por error
         iniciarCompra = confirm ("Desea iniciar su compra?")
 
     }
 
 }else {
-
+    //En caso de que haya puesto mal los datos de inicio de sesión
     alert("No se pudo iniciar sesión. No se puede acceder a la compra.");
 }
 
@@ -186,6 +186,8 @@ function abonar(totalCarrito) {
         case '2':
 
             alert("Usted ha seleccionado pagar con tarjeta. Total a pagar: $" + totalCarrito);
+
+            //función que trae para ingresar los datos
             pagoTarjeta();
             break;
 
@@ -197,7 +199,9 @@ function abonar(totalCarrito) {
     }
 }
 
-//Función para ingresar los datos de la tarjeta. 
+
+//Función para ingresar los datos de la tarjeta. Todavía no se como chequear por ejemplo si pone la cantidad de digitos completos,por lo que decidí resolverlo poniendo que recibirá luego confirmación
+
 function pagoTarjeta(){
 
     let nombreApellido = prompt ("Ingrese Nombre y Apellido como figura en la tarjeta");
