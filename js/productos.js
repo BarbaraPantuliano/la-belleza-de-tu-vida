@@ -1,3 +1,7 @@
+
+/*Linkeado en la página de productos*/
+
+
 // constantes para los datos de inicio de sesión
 const nombreUsuario = "GUIDO";
 const contrasenia = "1234";
@@ -143,7 +147,7 @@ if(iniciarSesion()){
             alert("Compra finalizada.\nLista de productos:\n" + lista_compra + "Total del carrito: $" + totalCarrito);
 
             abonar(totalCarrito);
-            
+
         }
 
         
@@ -153,6 +157,7 @@ if(iniciarSesion()){
 
 
         alert("No se inició la compra.");
+        
         iniciarCompra = confirm ("Desea iniciar su compra?")
 
     }
