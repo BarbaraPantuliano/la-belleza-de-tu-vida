@@ -157,7 +157,7 @@ if(iniciarSesion()){
 
 
         alert("No se inició la compra.");
-        
+
         iniciarCompra = confirm ("Desea iniciar su compra?")
 
     }
@@ -210,7 +210,7 @@ function pagoTarjeta(){
 
     if(nombreApellido !="" && (numeroTarjeta !="" && !isNaN(numeroTarjeta)) && fechaVencimiento !="" && codSeguridad != ""){
 
-        alert("Recibirá confirmación de pagouna vez validada la información ingresada");
+        alert("Recibirá confirmación de pago una vez validada la información ingresada");
     
     }else{
 
