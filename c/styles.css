@@ -1,0 +1,313 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "playfairdisplay";
+  src: url(../assets/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "raleway";
+  src: url(../assets/Raleway/Raleway-VariableFont_wght.ttf);
+}
+.cards .favorites-link, .cards .shopping-cart-treatment-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  color: white;
+  border-radius: 50%;
+}
+
+.cards .favorites-icon, .cards .shopping-cart-treatment-icon, .menunavegacion .shopping-cart-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.cards .precio, .cards {
+  background-color: hsl(340, 100%, 54%);
+  background-image: radial-gradient(circle, rgb(242, 136, 154), rgb(241, 212, 217));
+}
+
+@keyframes efectologo {
+  0% {
+    transform: rotate(-40deg);
+  }
+  20% {
+    transform: rotate(-20deg);
+  }
+  40% {
+    transform: rotate(20deg);
+  }
+  60% {
+    transform: rotate(40deg);
+  }
+  80% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(-20deg);
+  }
+}
+body {
+  background-color: hsl(185, 0%, 100%);
+  background-image: radial-gradient(circle at 91% 11%, hsla(66, 100%, 88%, 0.66) 4.0387722132%, transparent 37.2265767974%), radial-gradient(circle at 66% 37%, hsl(16, 100%, 88%) 0%, transparent 63.3364095611%), radial-gradient(circle at 36% 87%, hsl(321, 100%, 88%) 12.1075360571%, transparent 63.3364095611%);
+  background-blend-mode: normal, normal, normal;
+  font-size: 16px;
+}
+body h1 {
+  font-family: "playfairdisplay";
+  color: rgb(240, 120, 140);
+}
+body h2 {
+  font-family: "raleway";
+}
+body p {
+  font-family: "raleway";
+  font-size: 1rem;
+}
+
+.menunavegacion {
+  background-color: rgb(240, 120, 140);
+}
+.menunavegacion a {
+  text-decoration: none;
+  font-family: "raleway";
+}
+.menunavegacion a:hover {
+  background-color: #F2F2F2;
+}
+.menunavegacion .shopping-cart-icon {
+  margin-top: 7px;
+}
+
+footer {
+  background-color: rgba(230, 136, 149, 0.874);
+  height: 100%;
+}
+footer .newsletter {
+  margin-top: 20px;
+}
+footer .formulariofooter {
+  height: 30px;
+  min-width: 150px;
+  margin-bottom: 10px;
+}
+footer .textosfooter {
+  font-size: 1rem;
+  font-family: "raleway";
+}
+footer .botonnewsletter {
+  background-color: rgb(240, 120, 140);
+  font-family: "raleway";
+  font-size: 1rem;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .botonnewsletter:hover {
+  background-color: rgb(240, 120, 140);
+}
+footer a {
+  text-decoration: none;
+}
+footer .iconoinstragram {
+  width: 50px;
+  height: 50px;
+  margin: 30px 20px;
+}
+footer .iconofacebook {
+  width: 50px;
+  height: 50px;
+  margin: 30px 20px;
+}
+
+.imagenlogo {
+  width: 25%;
+  height: 25%;
+}
+.imagenlogo .logo {
+  animation-name: efectologo;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
+  animation-delay: 0s;
+}
+
+.containercarrousel {
+  max-width: 600px;
+}
+
+.frasefinal {
+  font-family: "playfairdisplay";
+  color: black;
+  font-size: 1.25rem;
+}
+
+.h2sobremi {
+  color: rgba(230, 136, 149, 0.874);
+}
+
+.imagentratamiento {
+  width: 200px;
+  height: 300px;
+}
+
+.inicioproductos {
+  position: relative;
+  width: 100%;
+}
+.inicioproductos img {
+  width: 100%;
+  height: 350px;
+}
+.inicioproductos .textosobreimagenproducto {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  word-wrap: break-word;
+  padding: 10px;
+  max-width: 90%;
+}
+
+.cardproducto {
+  display: flex;
+  justify-content: center;
+}
+
+.cardClaudia {
+  margin-left: 50%;
+}
+
+.textoiniciotest {
+  font-family: "playfairdisplay";
+  font-size: 1.5rem;
+  color: rgba(230, 136, 149, 0.874);
+}
+
+/*Hice esto por excepción, porque sino el efecto me cambiaba el tamaño de las letras*/
+[data-aos=fade-up] {
+  transform: none;
+}
+
+.imagenformulariocontacto {
+  width: 400px;
+  height: 300px;
+}
+
+.textoayudarte {
+  font-family: "raleway";
+  color: rgb(240, 120, 140);
+  font-size: 2rem;
+}
+
+.contenedorcontacto {
+  background-color: rgb(231, 181, 181);
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.contenedorcontacto .botonformcontacto {
+  background-color: rgb(240, 120, 140);
+  font-family: "raleway";
+  margin-bottom: 20px;
+}
+.contenedorcontacto .botonformcontacto:hover {
+  background-color: rgb(240, 120, 140);
+}
+.contenedorcontacto .itemsformulario {
+  font-family: "raleway";
+}
+
+.columnacontacto {
+  margin-left: 40px;
+}
+
+.whatsapp-button {
+  display: inline-block;
+  position: fixed;
+  bottom: 120px;
+  right: 60px;
+}
+.whatsapp-button .whatsapp-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+}
+.whatsapp-button .whatsapp-link:hover {
+  background-color: transparent;
+}
+
+iframe {
+  margin-top: 10px;
+  align-items: center;
+}
+
+.cards {
+  width: fit-content;
+  max-width: 300px;
+  transform: scale(0.8);
+}
+.cards .precio {
+  height: 30px;
+}
+.cardtestimonios {
+  max-width: 540px;
+}
+.cardtestimonios .imagentestimonio {
+  width: 90%;
+}
+
+@media (max-width: 767px) {
+  .inicioproductos img {
+    height: auto;
+  }
+  .inicioproductos .textosobreimagenproducto {
+    font-size: 18px;
+    padding: 5px;
+  }
+  .imagenlogo {
+    width: 50%;
+    height: 50%;
+  }
+  .whatsapp-button {
+    right: 1px;
+    margin-bottom: 100px;
+  }
+  body p {
+    font-size: 1.25rem;
+  }
+  .comoayudarte {
+    margin-top: 20px;
+  }
+  .columnacontacto {
+    margin-left: 0%;
+  }
+  .contenedorcontacto {
+    width: 95%;
+  }
+  iframe {
+    width: 100%;
+  }
+  .cards {
+    transform: scale(1);
+    width: 80%;
+    max-width: none;
+    margin: 16px;
+  }
+}
+@media (max-width: 320px) {
+  .whatsapp-button {
+    right: 1px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
