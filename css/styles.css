@@ -81,6 +81,7 @@ body p {
 }
 .menunavegacion .shopping-cart-icon {
   margin-top: 7px;
+  position: relative;
 }
 
 footer {
@@ -156,6 +157,73 @@ footer .iconofacebook {
   height: 300px;
 }
 
+.ventanaSesion {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modalSesion {
+  background-color: rgb(194, 142, 142);
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 300px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.close-btn {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(240, 120, 140);
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(240, 120, 140);
+}
+
+.badge {
+  background-color: #F2F2F2;
+  color: black;
+}
+
+.tituloProductos {
+  margin-top: 50px;
+}
+
 .inicioproductos {
   position: relative;
   width: 100%;
@@ -184,6 +252,75 @@ footer .iconofacebook {
   justify-content: center;
 }
 
+/* Styles para el modal */
+.modal-body {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-group-item button {
+  background-color: rgb(240, 120, 140);
+  color: black;
+}
+.list-group-item button:hover {
+  background-color: rgb(240, 120, 140);
+}
+
+.botonCarrito {
+  background-color: rgb(240, 120, 140);
+}
+.botonCarrito:hover {
+  background-color: rgb(240, 120, 140);
+}
+
+.botonCarrito2 {
+  background-color: rgb(146, 1, 1);
+}
+.botonCarrito2:hover {
+  background-color: rgb(146, 1, 1);
+}
+
+#search-input {
+  padding: 10px;
+  width: 300px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #f5bcbc;
+}
+
+#productos-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.btnCards {
+  background-color: rgb(240, 120, 140);
+}
+.btnCards:hover {
+  background-color: rgba(230, 136, 149, 0.874);
+}
+
+.productosContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+}
+
+@media (max-width: 425px) {
+  .productosContainer {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
 .cardClaudia {
   margin-left: 50%;
 }
@@ -259,6 +396,10 @@ iframe {
 .cards .precio {
   height: 30px;
 }
+.botonCards {
+  background-color: rgb(240, 120, 140);
+}
+
 .cardtestimonios {
   max-width: 540px;
 }
@@ -266,7 +407,7 @@ iframe {
   width: 90%;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .inicioproductos img {
     height: auto;
   }
@@ -277,9 +418,6 @@ iframe {
   .imagenlogo {
     width: 50%;
     height: 50%;
-  }
-  .cardClaudia {
-    margin-left: 20%;
   }
   .whatsapp-button {
     right: 1px;
