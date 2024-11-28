@@ -9,7 +9,7 @@ class Producto {
     }
 }
 
-// Productos iniciales
+/// Productos iniciales
 const productos = [
     new Producto(1, "Gel efecto Peeling", 10000, "../assets/gelefectopeeling.jpg", "imagen de un pote abierto con un producto color mostaza adentro, una mano sosteniéndolo y un dedo tomando el producto"), 
     new Producto(2, "Crema Humectante", 7000, "../assets/cremahumectante.jpg", "imagen de unas manos apretando un dispensador de crema"),

@@ -34,11 +34,6 @@ loginForm.addEventListener("submit", function(event) {
     }
 });
 
-
-
-
-
-
 // Mostrar productos al cargar la página
 mostrarProductos();
 

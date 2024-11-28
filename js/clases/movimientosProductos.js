@@ -28,7 +28,7 @@ function recuperarCantidadCarrito() {
 function actualizarContadorCarrito() {
     const contadorCarrito = document.getElementById('carrito-contador');
     const cantidadTotal = carrito.reduce((total, producto) => total + producto.cantidad, 0);
-    contadorCarrito.textContent = cantidadTotal; // Actualiza el contador en el HTML
+    contadorCarrito.textContent = cantidadTotal; 
 }
 
 // Función para agregar productos al carrito
@@ -37,15 +37,36 @@ function agregarAlCarrito(codigoProducto) {
     const productoExistente = carrito.find(p => p.codigo === codigoProducto);
 
     if (productoExistente) {
-        // Si el producto ya existe, aumentar la cantidad
-        productoExistente.cantidad++;
-        alert("Se actualizó la cantidad del producto")
+        productoExistente.cantidad++;  
+        Toastify({
+
+            text: "Se actualizó la cantidad del producto",
+            duration: 2000 ,
+            gravity : "top",
+            position: "center",
+            style: {
+                background: "linear-gradient(to right, #f8899b, #f2f2f2)",
+
+            }
+
+        }).showToast();
+
     } else {
-        // Si no existe, agregarlo con cantidad 1
         const producto = productos.find(p => p.codigo === codigoProducto);
         if (producto) {
-            carrito.push({ ...producto, cantidad: 1 }); // Añadir el producto con la cantidad
-            alert("Producto agregado con éxito")
+            carrito.push({ ...producto, cantidad: 1 });  
+            Toastify({
+
+                text: "Producto agregado con éxito",
+                duration: 2000 ,
+                gravity : "top",
+                position: "center",
+                style: {
+                    background: "linear-gradient(to right, #f8899b, #f2f2f2)",
+    
+                }
+        
+            }).showToast();
         }
     }
 
@@ -56,18 +77,65 @@ function agregarAlCarrito(codigoProducto) {
 
 // Función para eliminar un producto del carrito
 function eliminarDelCarrito(codigo) {
-    carrito = carrito.filter(p => p.codigo !== codigo);
-    actualizarCarrito();
-    cantidadCarrito--;
-    actualizarContadorCarrito()
+    Swal.fire({
+
+        title : "Está seguro que quiere eliminar el producto ?" ,
+        icon: "warning",
+        showCancelButton: true ,
+        confirmButtonColor: "#008000",
+        cancelButtonColor: "#d33",
+        confirmButtonText : "Si, eliminarlo",
+        cancelButtonText : "Cancelar!",
+
+    }).then ((result) =>{
+
+        if (result.isConfirmed){
+
+            carrito = carrito.filter(p => p.codigo !== codigo);
+            actualizarCarrito();
+            cantidadCarrito--;
+            actualizarContadorCarrito()
+            Toastify({
+
+                text: "Producto eliminado con éxito",
+                duration: 2000 ,
+                gravity : "top",
+                position: "center"
+
+            }).showToast();   
+        }
+    })
 }
 
 // Función para vaciar el carrito
 function vaciarCarrito() {
-    carrito = [];
-    actualizarCarrito();
-    cantidadCarrito=0;
-    actualizarContadorCarrito()
+    Swal.fire({
+
+        title : "Está seguro que quiere vaciar el carrito?" ,
+        icon: "warning",
+        showCancelButton: true ,
+        confirmButtonColor: "#008000",
+        cancelButtonColor: "#d33",
+        confirmButtonText : "Si, vaciarlo!",
+        cancelButtonText : "Cancelar!",
+
+    }).then ((result) =>{
+
+        if (result.isConfirmed){
+            carrito = [];
+            actualizarCarrito();
+            cantidadCarrito=0;
+            actualizarContadorCarrito()   
+            Toastify({
+
+                text: "Carrito vacío",
+                duration: 2000 ,
+                gravity : "top",
+                position: "center"
+
+            }).showToast();   
+        }
+    })   
 }
 
 // Función para actualizar el carrito en el DOM
@@ -77,6 +145,8 @@ function actualizarCarrito() {
     const listaCarrito = document.getElementById('carrito-lista');
     listaCarrito.innerHTML = '';
 
+    let precioTotal = 0;  // Inicializamos el precio total a 0
+
     carrito.forEach(producto => {
         const li = document.createElement('li');
         li.classList.add('list-group-item');
@@ -85,9 +155,20 @@ function actualizarCarrito() {
             <button class="btn btn-danger btn-sm" onclick="eliminarDelCarrito(${producto.codigo})">Eliminar</button>
         `;
         listaCarrito.appendChild(li);
-        actualizarContadorCarrito()
+
+        // Sumar al precio total
+        precioTotal += producto.precio * producto.cantidad;
     });
+
+    // Mostrar el precio total debajo de la lista de productos
+    const precioTotalElemento = document.getElementById('precio-total');
+    if (precioTotalElemento) {
+        precioTotalElemento.textContent = `Precio Total: $${precioTotal.toFixed(2)}`;
+    }
+
+    actualizarContadorCarrito(); // Actualizamos el contador del carrito
 }
+
 
 // Función para mostrar la ventana emergente del carrito
 function mostrarCarrito() {
@@ -143,7 +224,7 @@ function buscarProducto() {
                 <div class="card mb-4">
                     <img src="${producto.imagen}" class="card-img-top" alt="${producto.alt}">
                     <div class="card-body">
-                        <h5 class="card-title">${producto.nombre}</h5>
+                        <h1 class="card-title">${producto.nombre}</h1>
                         <p class="card-text">$${producto.precio}</p>
                         <button class="btn btnCards" onclick="agregarAlCarrito(${producto.codigo})">Agregar al carrito</button>
                     </div>
@@ -152,7 +233,6 @@ function buscarProducto() {
             productosSection.appendChild(div);
         });
     } else {
-        // Si no se encuentran productos, mostrar un mensaje
         productosSection.innerHTML = '<p>No se encontraron productos.</p>';
     }
 }
