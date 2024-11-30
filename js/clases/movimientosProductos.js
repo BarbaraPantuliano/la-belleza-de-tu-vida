@@ -44,10 +44,7 @@ function agregarAlCarrito(codigoProducto) {
             duration: 2000 ,
             gravity : "top",
             position: "center",
-            style: {
-                background: "linear-gradient(to right, #f8899b, #f2f2f2)",
-
-            }
+            backgroundColor: "#e68895df",
 
         }).showToast();
 
@@ -61,10 +58,7 @@ function agregarAlCarrito(codigoProducto) {
                 duration: 2000 ,
                 gravity : "top",
                 position: "center",
-                style: {
-                    background: "linear-gradient(to right, #f8899b, #f2f2f2)",
-    
-                }
+                backgroundColor: "#e68895df"
         
             }).showToast();
         }
@@ -100,7 +94,8 @@ function eliminarDelCarrito(codigo) {
                 text: "Producto eliminado con éxito",
                 duration: 2000 ,
                 gravity : "top",
-                position: "center"
+                position: "center",
+                backgroundColor: "#e68895df"
 
             }).showToast();   
         }
@@ -131,7 +126,8 @@ function vaciarCarrito() {
                 text: "Carrito vacío",
                 duration: 2000 ,
                 gravity : "top",
-                position: "center"
+                position: "center",
+                backgroundColor: "#e68895df"
 
             }).showToast();   
         }
